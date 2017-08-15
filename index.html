@@ -8,7 +8,7 @@
     <header class="main-header">
       <div class="top-header">
         <div class="container">
-          <span class="header-logo">Техномарт</span>
+          <div class="header-logo">Техномарт</div>
           <input class="search" type="text" placeholder="Поиск"></input>
           <ul class="markers-and-cart">
             <li class="markers"><a href="#">Закладки: 0</a></li>
@@ -18,10 +18,11 @@
         </div>
       </div>
       <div class="container">
-        <h1>
+        <p class="header-title">
           Интернет-магазин строительныых материалов и инструментов для ремонта
-        </h1>
-        <section class="contacts">
+        </p>
+        <section class="header-contacts">
+          <h2>Телефон и адрес</h2>
           <div class="phone">
             +7 (812) 555-05-55
           </div>
@@ -47,6 +48,7 @@
       </nav>
     </header>
     <main>
+      <h1 class="main-page-title">Главная страница магазина</h1>
       <section class="categories container">
         <h2 class="visually-hidden">Категории</h2>
         <article class="category materials">
@@ -101,18 +103,30 @@
             <h3 class="catalog-item-title">Перфоратор Bosch BFG 9000</h3>
             <p class="old-price">32500 p.</p>
             <a href="#" class="btn-price">25500 p.</a>
+            <div class="catalog-item-hover">
+              <a href="#" clas="button buy-it">Купить</a>
+              <button class="button mark-it" type="button">В закладки</button>
+            </div>
           </article>
           <article class="catalog-item">
             <img src="#" alt="Перфоратор Bosch BFG 3000">
             <h3 class="catalog-item-title">Перфоратор Bosch BFG 3000</h3>
             <p class="old-price">22500 p.</p>
             <a href="#" class="btn-price">15500 p.</a>
+            <div class="catalog-item-hover">
+              <a href="#" clas="button buy-it">Купить</a>
+              <button class="button mark-it" type="button">В закладки</button>
+            </div>
           </article>
           <article class="catalog-item">
             <img src="#" alt="Перфоратор Bosch BFG 6000">
             <h3 class="catalog-item-title">Перфоратор Bosch BFG 6000</h3>
             <p class="old-price">30500 р.</p>
             <a href="#" class="btn-price">25500 р.</a>
+            <div class="catalog-item-hover">
+              <a href="#" clas="button buy-it">Купить</a>
+              <button class="button mark-it" type="button">В закладки</button>
+            </div>
           </article>
           <article class="catalog-item">
             <img src="#" alt="Перфоратор Bosch BFG 2000">
@@ -120,6 +134,10 @@
             <h3 class="catalog-item-title">Перфоратор Bosch BFG 2000</h3>
             <p class="old-price"></p>
             <a href="#" class="btn-price">12500 р.</a>
+            <div class="catalog-item-hover">
+              <a href="#" clas="button buy-it">Купить</a>
+              <button class="button mark-it" type="button">В закладки</button>
+            </div>
           </article>
         </div>
       </section>
@@ -251,22 +269,22 @@
     </main>
     <footer class="main-footer">
       <div class="container">
-        <span class="footer-logo">Техномарт</span>
+        <div class="footer-logo">Техномарт</div>
         <nav class="first-footer-navigation">
           <ul>
-            <li>Компания</li>
-            <li>Новости</li>
-            <li>Каталог</li>
-            <li>Доставка</li>
-            <li>Контакты</li>
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
         <nav class="second-footer-navigation">
           <ul>
-            <li>Материалы</li>
-            <li>Техника</li>
-            <li>Инструмент</li>
-            <li>Спецпредложения</li>
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a href="#">Спецпредложения</a></li>
           </ul>
         </nav>
         <p class="footer-contacts">
@@ -281,6 +299,7 @@
             Все права защищены
           </p>
           <section class="socials">
+            <h2>Социальные сети</h2>
             <a href="#" class="social-btn social-vk">Вконтакте</a>
             <a href="#" class="social-btn social-fb">Facebook</a>
             <a href="#" class="social-btn social-inst">Instagram</a>
