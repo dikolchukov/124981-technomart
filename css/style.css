@@ -175,11 +175,24 @@ a {
   background-color: rgba(0,0,0,0.1);
 }
 
+.category-btn:hover,
+.category-btn:focus {
+  background-color: rgba(0,0,0,0.2);
+  outline: none;
+}
+
+.category-btn:active {
+  background-color: rgba(0,0,0,0.3);
+}
+
 .button {
+  font-family: Cuprum, Arial, sans-serif;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
+
+  cursor: pointer;
 }
 
 .materials {
@@ -204,6 +217,24 @@ a {
 
 .open-catalog {
   background-color: #ff5357;
+}
+
+.open-catalog:hover,
+.open-catalog:focus {
+  background-color: #ca2c37;
+  outline: none;
+}
+
+.open-catalog:active {
+  background-color: #ba2732;
+}
+
+.slide:nth-child(1) {
+  background-color: #bdac9c;
+}
+
+.slide:nth-child(2) {
+  background-color: #463d39;
 }
 
 .slide-title {
@@ -235,10 +266,311 @@ a {
   background-color: #ff5357;
 }
 
+.all-popular:hover,
+.all-popular:focus {
+  background-color: #ca2c37;
+  outline: none;
+}
+
+.all-popular:active {
+  background-color: #ba2732;
+}
+
 .catalog-item-title {
   font-family: PT Sans, Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
   color: #000000;
+}
+
+.old-price {
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.btn-price {
+  background-color: #ee3643;
+
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.buy-it {
+  background-color: #63a63e;
+}
+
+.buy-it:hover,
+.buy-it:focus {
+  background-color: #5fbb2d;
+  outline: none;
+}
+
+.buy-it:active {
+  background-color: #518534;
+}
+
+.mark-it {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.mark-it:active {
+  opacity: 0.3;
+}
+
+.all-brands {
+  background-color: #ff5357;
+}
+
+.all-brands:hover,
+.all-brands:focus {
+  background-color: #ca2c37;
+  outline: none;
+}
+
+.all-brands:active {
+  background-color: #ba2732;
+}
+
+.services-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services {
+  background-color: #f5f8fa;
+}
+
+.services p {
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.services-list label {
+  background-color: #3d546e;
+
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.services-list label:hover {
+  background-color: #293449;
+}
+
+.services-slide-title {
+  font-size: 36px;
+  line-height: 36px;
+  color: #3d546e;
+}
+
+.send-request {
+  background-color: #ff5357;
+}
+
+.send-request:hover,
+.send-request:focus {
+  background-color: #ca2c37;
+  outline: none;
+}
+
+.all-brands:active {
+  background-color: #ba2732;
+}
+
+.about-us h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-us p {
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.about-us ul {
+  list-style: none;
+}
+
+.about-us li {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.more-about-us {
+  background-color: #ff5357;
+}
+
+.more-about-us:hover,
+.more-about-us:focus {
+  background-color: #ca2c37;
+  outline: none;
+}
+
+.more-about-us:active {
+  background-color: #ba2732;
+}
+
+.contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.write-us {
+  background-color: #ff5357;
+}
+
+.write-us:hover,
+.write-us:focus {
+  background-color: #ca2c37;
+  outline: none;
+}
+
+.write-us:active {
+  background-color: #ba2732;
+}
+
+.main-footer {
+  background-color: #3d546e;
+}
+
+.footer-logo {
+  background-color: #ff5357;
+
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.first-footer-navigation ul {
+  list-style: none;
+}
+
+.first-footer-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.first-footer-navigation a:hover,
+.first-footer-navigation a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+.first-footer-navigation a:active {
+  color: rgba(241,245,247,0.5);
+  text-decoration: none;
+}
+
+.second-footer-navigation ul {
+  list-style: none;
+}
+
+.second-footer-navigation a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffda96;
+}
+
+.second-footer-navigation a:hover,
+.second-footer-navigation a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+.second-footer-navigation a:active {
+  color: rgba(255,209,128,0.5);
+  text-decoration: none;
+}
+
+.footer-contacts {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.bottom-footer {
+  background-color: #33445b;
+}
+
+.bottom-footer p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #f3f7f9;
+}
+
+.socials a {
+  color: #ffffff;
+}
+
+.creators a,
+.feedback a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffda96;
+}
+
+.write-us-form {
+  background-color: #ffffff;
+}
+
+.write-us-form label {
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.write-us-form input,
+.write-us-form textarea {
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+input.send-it {
+  background-color: #ee3643;
+
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+input.send-it:hover,
+input.send-it:focus {
+  background-color: #ca2c37;
+  outline: none;
+}
+
+input.send-it:active {
+  background-color: #ba2732;
 }
