@@ -13,12 +13,12 @@
       <div class="top-header">
         <div class="container">
           <div class="header-logo">Техномарт</div>
-          <input class="search" type="search" placeholder="Поиск:">
+          <input class="search" type="text" placeholder="Поиск">
           <ul class="markers-and-cart">
-            <li><a href="#" class="markers">Закладки: 0</a></li>
-            <li><a href="#" class="cart">Корзина: 0</a></li>
+            <li class="markers"><a href="#">Закладки: 0</a></li>
+            <li class="cart"><a href="#">Корзина: 0</a></li>
           </ul>
-          <a class="make-order" href="#">Оформить заказ</a>
+          <a href="#" class="make-order" >Оформить заказ</a>
         </div>
       </div>
       <div class="container">
@@ -55,46 +55,50 @@
       <h1 class="visually-hidden">Главная страница магазина</h1>
       <section class="categories container">
         <h2 class="visually-hidden">Категории</h2>
-        <article class="category materials">
-          <h3>Материалы</h3>
-          <a href="#" class="button category-btn">На любой вкус</a>
-          <div class="flag-new">Новинка</div>
-        </article>
-        <article class="category instrument">
-          <h3>Инструмент</h3>
-          <a href="#" class="button category-btn">На все случаи</a>
-        </article>
-        <article class="category technics">
-          <h3>Техника</h3>
-          <a href="#" class="button category-btn">Для стройки</a>
-        </article>
-        <article class="category sales">
-          <h3>Скидки</h3>
-          <a href="#" class="button category-btn">На 350 товаров</a>
-        </article>
-        <article class="category delivery">
-          <h3>Доставка</h3>
-          <a href="#" class="button category-btn">Бесплатно</a>
-        </article>
-        <article class="slider">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <div class="slider-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-          </div>
-          <a href="#" class="button open-catalog">Открыть каталог</a>
-          <div class="slides">
-            <div class="slide">
-              <h3 class="slide-title">Перфораторы</h3>
-              <p>Настоящие мужские игрушки</p>
+        <div class="categories-wrap-left">
+          <article class="category materials">
+            <h3>Материалы</h3>
+            <a href="#" class="button category-btn">На любой вкус</a>
+            <div class="flag-new">Новинка</div>
+          </article>
+          <article class="category instrument">
+            <h3>Инструмент</h3>
+            <a href="#" class="button category-btn">На все случаи</a>
+          </article>
+          <article class="slider">
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
             </div>
-            <div class="slide">
-              <h3 class="slide-title">Дрели</h3>
-              <p>Соседям на радость!</p>
+            <a href="#" class="button open-catalog">Открыть каталог</a>
+            <div class="slides">
+              <div class="slide">
+                <h3 class="slide-title">Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+              </div>
+              <div class="slide visually-hidden">
+                <h3 class="slide-title">Дрели</h3>
+                <p>Соседям на радость!</p>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </div>
+        <div class="categories-wrap-right">
+          <article class="category technics">
+            <h3>Техника</h3>
+            <a href="#" class="button category-btn">Для стройки</a>
+          </article>
+          <article class="category sales">
+            <h3>Скидки</h3>
+            <a href="#" class="button category-btn">На 350 товаров</a>
+          </article>
+          <article class="category delivery">
+            <h3>Доставка</h3>
+            <a href="#" class="button category-btn">Бесплатно</a>
+          </article>
+        </div>
       </section>
       <section class="popular container">
         <header class="section-head">
