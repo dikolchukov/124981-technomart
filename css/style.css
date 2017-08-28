@@ -34,6 +34,7 @@ html {
 
 .main-header {
   background-color: #f3f7f8;
+  margin-bottom: 60px;
 }
 
 .top-header {
@@ -256,12 +257,31 @@ html {
 }
 
 .categories {
+  margin-bottom: 53px;
+
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.categories-wrap-left {
+  width: 620px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.categories-wrap-right {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .category {
   width: 300px;
+  margin-bottom: 20px;
   /*height: 123px;*/
 }
 
@@ -350,6 +370,8 @@ html {
 }
 
 .slide p {
+  margin: 0;
+  padding: 0;
   font-family: PT Sans, Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -358,14 +380,28 @@ html {
 
 .section-head {
   background-color: #f9f5f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
 }
 
 .section-head h2 {
+  margin: 0;
+  padding: 0;
+  margin-left: 28px;
+
   font-family: Cuprum, Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
   color: #3d546e;
+  text-transform: uppercase;
+}
+
+.section-head a {
+  margin-right: 24px;
 }
 
 .all-popular {
@@ -380,6 +416,19 @@ html {
 
 .all-popular:active {
   background-color: #ba2732;
+}
+
+.popular-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 20px;
+}
+
+.catalog-item {
+  width: 220px;
 }
 
 .catalog-item-title {
@@ -446,6 +495,18 @@ html {
   background-color: #ba2732;
 }
 
+.brands-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-between;
+}
+
+.brand {
+  width: 220px;
+}
+
 .services-title {
   font-size: 30px;
   line-height: 30px;
@@ -462,6 +523,16 @@ html {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+}
+
+.services-slider {
+  display: flex;
+  align-items: flex-start;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
 }
 
 .services-list label {
@@ -492,8 +563,12 @@ html {
   outline: none;
 }
 
-.all-brands:active {
+.send-request:active {
   background-color: #ba2732;
+}
+
+.info-and-contacts {
+  display: flex;
 }
 
 .about-us h2 {
@@ -566,16 +641,30 @@ html {
   background-color: #3d546e;
 }
 
+.top-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 .footer-logo {
   background-color: #ff5357;
 
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  width: 220px;
+  margin-right: 170px;
 }
 
 .first-footer-navigation ul {
   list-style: none;
+  width: 550px;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .first-footer-navigation a {
@@ -595,8 +684,18 @@ html {
   text-decoration: none;
 }
 
+.second-footer-navigation {
+  order: 2;
+}
+
 .second-footer-navigation ul {
   list-style: none;
+  width: 525px;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .second-footer-navigation a {
@@ -620,16 +719,29 @@ html {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
+  margin: 0;
+  padding: 0;
+  margin-right: 92px;
 }
 
 .bottom-footer {
   background-color: #33445b;
 }
 
+.bottom-footer .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .bottom-footer p {
   font-size: 16px;
   line-height: 18px;
   color: #f3f7f9;
+}
+
+.socials {
+  align-self: center;
 }
 
 .socials a {
