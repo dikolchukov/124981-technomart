@@ -14,14 +14,13 @@
         <div class="container">
           <div class="header-logo">Техномарт</div>
           <div class="top-header-wrap">
-            <div class="search-wrap">
-              <i class="search-icon"></i>
-              <input class="search" type="text" placeholder="Поиск">
-
-            </div>
+            <form class="search-form" action="#" method="get">
+              <input class="search" type="search" placeholder="Поиск">
+              <button class="search-btn" type="submit">Найти</button>
+            </form>
             <ul class="markers-and-cart">
-              <li class="markers"><a href="#">Закладки: 0</a></li>
-              <li class="cart"><a href="#">Корзина: 0</a></li>
+              <li><a class="markers" href="#">Закладки: 0</a></li>
+              <li><a class="cart"href="#">Корзина: 0</a></li>
             </ul>
             <a href="#" class="make-order" >Оформить заказ</a>
           </div>
@@ -72,8 +71,10 @@
             <a href="#" class="button category-btn">На все случаи</a>
           </article>
           <article class="slider">
-            <input type="radio" id="btn-1" name="toggle" checked>
-            <input type="radio" id="btn-2" name="toggle">
+            <input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+            <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+            <label for="btn-1" class="arrow-btn left-btn"></label>
+            <label for="btn-2" class="arrow-btn right-btn"></label>
             <div class="slider-controls">
               <label for="btn-1"></label>
               <label for="btn-2"></label>
@@ -84,7 +85,7 @@
                 <h3 class="slide-title">Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
               </div>
-              <div class="slide visually-hidden">
+              <div class="slide">
                 <h3 class="slide-title">Дрели</h3>
                 <p>Соседям на радость!</p>
               </div>
