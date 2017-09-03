@@ -976,18 +976,27 @@ section.brands {
   opacity: 0.3;
 }
 
+.services {
+  background-color: #f5f8fa;
+}
+
 .services-title {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+  margin-top: 64px;
+  margin-bottom: 32px;
   font-size: 30px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
 }
 
-.services {
-  background-color: #f5f8fa;
-}
-
 .services p {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 74px;
   font-family: PT Sans, Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -996,16 +1005,39 @@ section.brands {
 
 .services-slider {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.left-wrap-slider {
+  width: 240px;
 }
 
 .services-list {
-  margin: 0;
-  padding: 0;
+  position: relative;
+  width: 240px;
+  overflow: visible;
+}
+
+.services-list::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  right: 0;
+  width: 10px;
+  height: 272px;
+  background: url(../img/services-shadow.png) no-repeat center;
+
 }
 
 .services-list label {
-  background-color: #3d546e;
+  display: block;
+  width: 240px;
+  margin: 0;
+  padding: 15px 23px 15px;
+  background-color: #32425c;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
 
   font-size: 21px;
   line-height: 30px;
@@ -1016,13 +1048,82 @@ section.brands {
   background-color: #293449;
 }
 
+#services-btn-1:checked ~ .left-wrap-slider label[for="services-btn-1"] {
+  background-color: #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  color: #3d546e;
+}
+
+#services-btn-2:checked ~ .left-wrap-slider label[for="services-btn-2"] {
+  background-color: #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  color: #3d546e;
+}
+
+#services-btn-3:checked ~ .left-wrap-slider label[for="services-btn-3"] {
+  background-color: #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  color: #3d546e;
+}
+
+.services-slides {
+  position: relative;
+  width: 620px;
+  min-height: 288px;
+}
+
+.services-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 620px;
+  min-height: 288px;
+}
+
+.services-slide:nth-child(1) {
+  display: none;
+  background: url(../img/delivery-slide.jpg) no-repeat right bottom;
+}
+
+.services-slide:nth-child(2) {
+  display: none;
+  background: url(../img/garanty-slide.jpg) no-repeat right bottom;
+}
+
+.services-slide:nth-child(3) {
+  display: none;
+  background: url(../img/credit-slide.jpg) no-repeat right bottom;
+}
+
 .services-slide-title {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
   font-size: 36px;
   line-height: 36px;
   color: #3d546e;
 }
 
+.services-slide p {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+}
+
+.services-slide:nth-child(2) p {
+  width: 380px;
+}
+
 .send-request {
+  width: 195px;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 3px;
   background-color: #ff5357;
 }
 
@@ -1034,6 +1135,18 @@ section.brands {
 
 .send-request:active {
   background-color: #ba2732;
+}
+
+#services-btn-1:checked ~ .services-slides .services-slide:nth-child(1) {
+  display: block;
+}
+
+#services-btn-2:checked ~ .services-slides .services-slide:nth-child(2) {
+  display: block;
+}
+
+#services-btn-3:checked ~ .services-slides .services-slide:nth-child(3) {
+  display: block;
 }
 
 .info-and-contacts {
