@@ -7,14 +7,21 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="top-header container">
-        <a href="index.html"><div class="header-logo">Техномарт</div></a>
-        <input class="search" type="text" placeholder="Поиск">
-        <ul class="markers-and-cart">
-          <li class="markers"><a href="#">Закладки: 0</a></li>
-          <li class="cart"><a href="#">Корзина: 0</a></li>
-        </ul>
-        <a href="#" class="make-order" >Оформить заказ</a>
+      <div class="top-header">
+        <div class="container">
+          <a href="index.html" class="header-logo">Техномарт</a>
+          <div class="top-header-wrap">
+            <form class="search-form" action="#" method="get">
+              <input class="search" type="search" placeholder="Поиск">
+              <button class="search-btn" type="submit">Найти</button>
+            </form>
+            <ul class="markers-and-cart">
+              <li><a class="markers" href="#">Закладки: 0</a></li>
+              <li><a class="cart not-empty" href="#">Корзина: 10</a></li>
+            </ul>
+            <a href="#" class="make-order" >Оформить заказ</a>
+          </div>
+        </div>
       </div>
       <div class="container">
         <p class="header-title">

@@ -68,6 +68,23 @@ html {
   text-transform: uppercase;
 }
 
+a.header-logo {
+  display: block;
+  color: #ffffff;
+}
+
+a.header-logo:focus,
+a.header-logo:hover {
+  background-color: #ca2c37;
+  border-bottom: 5px solid #9a212a;
+  outline: none;
+}
+
+a.header-logo:active {
+  background-color: #ba2732;
+  border-bottom: 5px solid #8e1e26;
+}
+
 .search-form {
   position: relative;
   width: 270px;
@@ -250,6 +267,18 @@ html {
   opacity: 0.5;
 }
 
+.not-empty {
+  background-color: #ee3643;
+}
+
+.markers-and-cart a.not-empty:focus,
+.markers-and-cart a.not-empty:hover {
+  background-color: #ca2c37;
+}
+
+.markers-and-cart a.not-empty:active {
+  background-color: #ba2732;
+}
 .make-order {
   width: 150px;
   color: #ffffff;
@@ -322,7 +351,7 @@ html {
 .phone::before {
   content: "";
   position: absolute;
-  top: 11px;
+  top: 9px;
   left: 11px;
   width: 19px;
   height: 19px;
@@ -378,12 +407,12 @@ html {
 
 .sign-in::before {
   position: absolute;
-  top: 14px;
+  top: 12px;
   left: 14px;
   content: "";
   width: 20px;
   height: 17px;
-  opacity: 0.3;
+  /*opacity: 0.3;*/
   background: url(../img/icon-login.svg) no-repeat center;
 }
 
@@ -410,7 +439,76 @@ html {
   color: rgba(0,0,0,0.3);
 }
 
-.main-navigation {
+.user-block {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.profile-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 10px 11px 14px;
+  width: 300px;
+  background-color: #ffffff;
+}
+
+.profile {
+  position: relative;
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  padding-left: 34px;
+}
+
+.profile:focus {
+  outline: none;
+}
+
+.profile:active {
+  color: rgba(0,0,0,0.3);
+}
+
+
+.profile::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 20px;
+  height: 18px;
+  background: url(../img/icon-user.svg) no-repeat center;
+}
+
+.profile:hover::before,
+.profile:focus::before {
+  background: url(../img/icon-user-hover.svg) no-repeat center;
+  outline: none;
+}
+
+.profile:active::before {
+  background: url(../img/icon-user.svg) no-repeat center;
+  outline: none;
+}
+
+.log-out {
+  text-indent: -9999px;
+  width: 20px;
+  height: 17px;
+  background: url(../img/icon-login.svg) no-repeat center;
+}
+
+.log-out:hover,
+.log-out:focus {
+  background: url(../img/icon-login-hover.svg) no-repeat center;
+  outline: none;
+}
+
+.log-out:active {
+  background: url(../img/icon-login.svg) no-repeat center;
 }
 
 .site-navigation {
