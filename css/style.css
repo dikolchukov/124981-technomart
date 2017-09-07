@@ -41,6 +41,10 @@ html {
   margin-bottom: 60px;
 }
 
+.current-page-main-header {
+  margin-bottom: 23px;
+}
+
 .top-header {
   background-color: #33445a;
   margin-bottom: 46px;
@@ -310,7 +314,7 @@ a.header-logo:active {
 .header-title {
   width: 310px;
   margin: 0;
-  padding: 0 60px 0 52px;
+  padding: 0 60px 0 42px;
   margin-right: 10px;
 
   font-size: 16px;
@@ -441,10 +445,11 @@ a.header-logo:active {
 
 .user-block {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   width: 300px;
   flex-wrap: wrap;
   align-items: flex-start;
+  align-content: flex-start;
 }
 
 .profile-block {
@@ -452,6 +457,7 @@ a.header-logo:active {
   justify-content: space-between;
   align-items: center;
   padding: 11px 10px 11px 14px;
+  margin-bottom: 3px;
   width: 300px;
   background-color: #ffffff;
 }
@@ -471,7 +477,6 @@ a.header-logo:active {
 .profile:active {
   color: rgba(0,0,0,0.3);
 }
-
 
 .profile::before {
   position: absolute;
@@ -509,6 +514,48 @@ a.header-logo:active {
 
 .log-out:active {
   background: url(../img/icon-login.svg) no-repeat center;
+}
+
+.my-orders,
+.my-profile {
+  margin: 0;
+  padding: 0;
+  width: 112px;
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.my-orders {
+  position: relative;
+  padding-left: 18px;
+  margin-right: 13px;
+}
+
+.my-orders:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #32425c;
+}
+
+.my-orders:hover,
+.my-profile:hover,
+.my-orders:focus,
+.my-profile:focus {
+  color: #ee3643;
+  outline: none;
+}
+
+.my-orders:active,
+.my-profile:active {
+  color: rgba(50,66,92,0.3);
 }
 
 .site-navigation {
@@ -550,6 +597,29 @@ a.header-logo:active {
 .site-navigation a:active {
   background-color: #1d2739;
   color: rgba(255,255,255,0.5);
+}
+
+.breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs li {
+  margin: 0;
+  padding: 0;
+  padding-right: 23px;
+  margin-right: 18px;
+}
+
+.breadcrumbs li:last-of-type {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs a {
+  display: block;
 }
 
 .categories {
