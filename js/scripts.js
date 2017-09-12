@@ -4,6 +4,8 @@ var close = document.querySelector(".map-close-btn");
 var formLink = document.querySelector(".write-us");
 var formPopup = document.querySelector(".write-us-form");
 var formClose = document.querySelector(".form-close-btn");
+var buyit = document.querySelectorAll(".buy-it");
+var cartWindow = document.querySelector(".cart-window");
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
@@ -23,4 +25,9 @@ formLink.addEventListener("click", function(event) {
 formClose.addEventListener("click", function(event) {
   event.preventDefault();
   formPopup.classList.remove("modal-show");
+});
+
+buyit.addEventListener("click", function(event) {
+  event.preventDefault();
+  cartWindow.classList.add("modal-show");
 });
